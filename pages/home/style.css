@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white;
+    --secund-text-color: rgba(230, 230, 230, 1);
+    --bg-color: rgba(24, 24, 28, 1);
+    --container-color: rgba(0, 0, 0, 1);
+    --button-color: rgba(247, 255, 25, 1);
+    --secund-button-color: rgba(64, 64, 68, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+body * {
+    font-family: "Inter", sans-serif;
+    color: var( --text-color);
+}
