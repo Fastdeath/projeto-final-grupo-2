@@ -22,6 +22,30 @@ body * {
     color: var( --text-color);
 }
 
-.txt__stl{
-    Text-decoration: none;
+.navbar {
+    display: block;
+}
+
+#item__logo {
+    display: inline;
+}
+
+#item__menu {
+    display: inline;
+}
+
+#item__btn{
+    display: inline;
+}
+
+#lista {
+    display: inline;
+}
+
+.menu__txt {
+    display: inline;
+}
+
+.btn__txt {
+    display: inline;
 }
