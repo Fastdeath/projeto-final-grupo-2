@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(72deg 11.63% 8.43%);
+}
+header{
+    background-color: black;
+    display: flex;
+}
+#global-header{
+    height: 70px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    padding-inline-start: 5rem;
+    padding-inline-end: 4rem;
+}
+.logo{
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+}
+#global-link {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 110%;
+}
+#global-lista{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.principal{
+    padding-inline-start: 5rem;
+    padding-inline-end: 4rem;
+}
+
+.imagem-topo{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+#galeria{
+    display: inline-flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    width: 375px;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+.imagem-galeria{
+    width: 375px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 0.5rem;
+}
+#jogo{
+    width: 100%;
+    display: inline-grid;
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+    justify-items: center;
+    justify-content: start;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 27px;
+}
+#banner{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+#nome-modo{
+    color: aliceblue;
+    font-size: 375%;
+    font-family: fantasy;
+}
+#descrição{
+    height: 130px;
+    margin-top: 500px;
+    display: inline-grid;
+    position: absolute;
+    align-items: end;
+    align-content: center;
+    overflow: auto;
+}
+#contener-descrição{
+    background-color: black;
+    height: 130px;
+    display: grid;
+    align-items: center;
+    padding-inline-start: 25px;
+    border-radius: 0.5rem;
+}
+.texto{
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+}
+#footer{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: small;
+}
+#classificação{
+    width: 215px;
+    height: 120px;
+}
+#modo-jogo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
