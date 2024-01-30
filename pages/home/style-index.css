@@ -63,7 +63,7 @@ nav {
 .item__menu {
     height: 32px;
     padding: 8px 16px;
-    
+    transition: 0.3s;
     align-items: center;
 }
 

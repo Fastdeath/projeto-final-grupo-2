@@ -10,6 +10,7 @@
     --bg-color: rgba(24, 24, 28, 1);
     --container-color: rgba(0, 0, 0, 1);
     --button-color: rgba(247, 255, 25, 1);
+    --button-color-hover: rgb(217, 223, 53);
     --secund-button-color: rgba(64, 64, 68, 1);
     --color-medium-70: rgba(255, 255, 255, 0.70);
     
@@ -62,7 +63,7 @@ nav {
 .item__menu {
     height: 32px;
     padding: 8px 16px;
-    
+    transition: 0.3s;
     align-items: center;
 }
 
