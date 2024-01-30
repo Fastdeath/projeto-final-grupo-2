@@ -10,6 +10,7 @@
     --bg-color: rgba(24, 24, 28, 1);
     --container-color: rgba(0, 0, 0, 1);
     --button-color: rgba(247, 255, 25, 1);
+    --button-color-hover: rgb(217, 223, 53);
     --secund-button-color: rgba(64, 64, 68, 1);
     --color-medium-70: rgba(255, 255, 255, 0.70);
     
@@ -92,6 +93,16 @@ nav {
     font-style: normal;
     font-weight: 700;
     border: none;
+    transition: 0.3s;
+    outline: 1px solid var(--text-color);
+    outline-offset: -1px;
+}
+
+#item__btn:hover {
+    border-radius: 8px;
+    background-color: var(--secund-text-color);
+    outline: 4px solid var(--text-color);
+    outline-offset: -4px;
 }
 
 .btn__txt {
@@ -148,6 +159,16 @@ nav {
     color: var(--container-color);
     text-decoration: none;
     border: none;
+    transition: 0.3s;
+    outline: 1px solid var(--button-color);
+    outline-offset: -1px;
+}
+
+#btn__cta:hover {
+    border-radius: 8px;
+    background-color: var(--button-color-hover);
+    outline: 4px solid var(--text-color);
+    outline-offset: -4px;
 }
 
 #btn__cta-txt {
@@ -219,6 +240,7 @@ nav {
     border-radius: 8px;
     margin-right: 16px;
     margin-bottom: 16px;
+    transition: 0.3s;
 }
 
 #card__ff {
@@ -228,6 +250,7 @@ nav {
     border-radius: 8px;
     margin-right: 16px;
     margin-bottom: 16px;
+    transition: 0.3s;
 }
 
 #card__lf {
@@ -237,6 +260,7 @@ nav {
     border-radius: 8px;
     margin-right: 16px;
     margin-bottom: 16px;
+    transition: 0.3s;
 }
 
 #card__rr {
@@ -245,6 +269,7 @@ nav {
     height: 328px;  
     border-radius: 8px;
     margin-bottom: 16px;
+    transition: 0.3s;
 }
 
 #card__br-zb:hover,
