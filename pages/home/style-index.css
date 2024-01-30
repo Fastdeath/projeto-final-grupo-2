@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+:root {
+    --text-color: white;
+    --secund-text-color: #CDCDCD;
+    --bg-color: rgba(24, 24, 28, 1);
+    --container-color: rgba(0, 0, 0, 1);
+    --button-color: rgba(247, 255, 25, 1);
+    --secund-button-color: rgba(64, 64, 68, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+body * {
+    font-family: "Inter", sans-serif;
+    color: var( --text-color);
+}
+
+header {
+    background-color: var(--container-color);
+    height: 72px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 20px 104px 20px 104px;
+    right: 0;
+    justify-content: space-between;
+}
+
+#bloco__nav {
+    display: flex;
+}
+
+#menu,
+#item__btn,
+#lista,
+.item__menu
+  {
+    display: inline;
+}
+
+#item__logo {
+    margin-right: 64px;
+}
+
+
+.item__menu {
+    height: 32px;
+    padding: 8px 16px;
+    
+    align-items: center;
+}
+
+.item__menu:active {
+
+}
+
+.item__menu:hover {
+    height: 32px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--secund-button-color);
+}
+
+.menu__txt {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#nav__btn {
+    display: flex;
+}
+
+#item__btn {
+    border-radius: 8px;
+    display: flex;
+    background-color: var(--text-color);
+    color: var(--container-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+}
+
+.btn__txt {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--container-color);
+    text-decoration: none;
+}
+
+#grad {
+    position: absolute;
+    width: 1440px;
+    height: 712px;
+    background: linear-gradient(90deg, rgba(24, 24, 28, 0.90) 26.7%, rgba(24, 24, 28, 0.00) 70.03%);
+}
+
+#video__cta {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    align-items: end;
+}
+
+#video {
+    height: 712px;
+}
+
+#cta {
+    display: inline-block;
+    margin-top: 226px;
+    
+    
+}
+
+.tlt__cta {
+    width: 511px;
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 48px;
+}
+
+#btn__cta {
+    border-radius: 8px;
+    background-color: var(--button-color);
+    display: inline-flex;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--container-color);
+    text-decoration: none;
+    border: none;
+}
+
+#btn__cta-txt {
+    padding: 8px 16px;
+    color: var(--container-color);
+    text-decoration: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.cont__desc {
+    margin-top: 122px;
+    padding: 32px;
+    border-radius: 8px;
+    
+    background: var(--container-color);
+}
+
+.tlt__h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+#txt__desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#conteudo {
+    margin: 0px 104px 0px 104px;
+    position: relative;
+}
+
+#modos {
+    margin-top: 64px;
+}
+
+
+#modos__list {
+    list-style: none;
+}
+
+#link__br-zb,
+#link__ff,
+#link__lf,
+#link__rr {
+    text-decoration: none;
+}
+
+.tlt__h3 {
+    margin-left: 32px;
+    text-decoration: none;
+    padding-top: 283px;
+}
+
+.modos__cards {
+    display: inline-table;
+}
+
+#card__br-zb {
+    background-image: url(/assets/thumbnail-battle-royale-zero.png);
+    width: 376px;
+    height: 328px;  
+    border-radius: 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+#card__ff {
+    background-image: url(/assets/thumbnail-fortnite-festival.png);
+    width: 376px;
+    height: 328px;  
+    border-radius: 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+#card__lf {
+    background-image: url(/assets/thumbnail-lego-fortnite.png);
+    width: 376px;
+    height: 328px;  
+    border-radius: 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+#card__rr {
+    background-image: url(/assets/thumbnail-rocket-racing.png);
+    width: 376px;
+    height: 328px;  
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+#requisitos {
+    margin-top: 64px;
+    padding: 32px;
+    border-radius: 8px;
+    background: var(--container-color);
+}
+
+#table {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.tlt__re-tbl {
+    width: 50%;
+    text-align: start;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.txt__re-tbl-1 {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--secund-text-color);
+    padding-bottom: 8px;
+}
+
+.txt__re-tbl-2 {
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.txt__re-1 {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--secund-text-color);
+    padding-bottom: 8px;
+}
+
+.txt__re-2 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.line-2 {
+    padding-bottom: 32px;
+}
+
+
+footer {
+    padding: 48px 104px 96px 104px;
+    background-color: var(--container-color);
+    display: flex;
+    top: 0;
+    margin-top: 64px;
+}
+
+#conteudo__bot {
+    display: block;
+    align-items: center;
+    right: 0;
+}
