@@ -58,7 +58,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.video{
+iframe {
     width: 375px;
     height: 300px;
     border-radius: 0.5rem;
@@ -101,7 +101,7 @@ header{
     align-content: center;
     overflow: auto;
 }
-#contener-descrição{
+#container-descrição{
     background-color: black;
     height: 130px;
     display: grid;
@@ -110,6 +110,27 @@ header{
     border-radius: 0.5rem;
 }
 .texto{
+    display: flex;
+    justify-content: center;
     color: aliceblue;
     font-family: "Inter", sans-serif;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#footer{
+    margin-top: 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: small;
+}
+#classificação{
+    width: 215px;
+    height: 120px;
 }
