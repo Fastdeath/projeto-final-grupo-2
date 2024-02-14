@@ -48,9 +48,7 @@ nav {
 }
 
 #menu,
-#item__btn,
-#lista,
-.item__menu
+#lista
   {
     display: inline;
 }
@@ -61,6 +59,7 @@ nav {
 
 
 .item__menu {
+    display: inline;
     height: 32px;
     padding: 8px 16px;
     transition: 0.3s;
@@ -214,6 +213,7 @@ nav {
 
 #modos__list {
     list-style: none;
+    display: inline-flex;
 }
 
 #link__br-zb,
@@ -224,7 +224,7 @@ nav {
 }
 
 .tlt__h3 {
-    margin-left: 32px;
+    padding-left: 32px;
     text-decoration: none;
     padding-top: 283px;
     font-size: 20px;
@@ -232,53 +232,35 @@ nav {
     font-weight: 700;
 }
 
-.modos__cards {
-    display: inline-table;
-}
 
 #card__br-zb {
     background-image: url(/projeto-final-grupo-2/assets/thumbnail-battle-royale-zero.png);
-    width: 376px;
-    height: 328px;  
-    border-radius: 8px;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    transition: 0.3s;
 }
 
 #card__ff {
     background-image: url(/projeto-final-grupo-2/assets/thumbnail-fortnite-festival.png);
-    width: 376px;
-    height: 328px;  
-    border-radius: 8px;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    transition: 0.3s;
 }
 
 #card__lf {
-    background-image: url(/projeto-final-grupo-2/assets/thumbnail-lego-fortnite.png);
-    width: 376px;
-    height: 328px;  
-    border-radius: 8px;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    transition: 0.3s;
+    background-image: url(/projeto-final-grupo-2/assets/thumbnail-lego-fortnite.png); 
 }
 
 #card__rr {
     background-image: url(/projeto-final-grupo-2/assets/thumbnail-rocket-racing.png);
+}
+
+.cards__cont {
+    background-size: 376px 328px;
     width: 376px;
     height: 328px;  
     border-radius: 8px;
+    margin-right: 16px;
     margin-bottom: 16px;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
-#card__br-zb:hover,
-#card__ff:hover,
-#card__lf:hover,
-#card__rr:hover {
+.cards__cont:hover {
+    background-size: 404px 352px;
     border-radius: 8px;
     outline: 4px solid var(--color-medium-70);
     outline-offset: -4px;
@@ -291,9 +273,8 @@ nav {
     background: var(--container-color);
 }
 
-#table {
-    width: 100%;
-    margin-top: 16px;
+#re__list {
+    list-style: none;
 }
 
 .tlt__re-tbl {
@@ -303,6 +284,7 @@ nav {
     font-style: normal;
     font-weight: 700;
     padding-bottom: 32px;
+    color: var(--text-color);
 }
 
 .txt__re-tbl-1 {
@@ -315,6 +297,7 @@ nav {
 .txt__re-tbl-2 {
     font-style: normal;
     font-weight: 400;
+    color: var(--text-color);
     padding-bottom: 32px;
 }
 
@@ -329,10 +312,34 @@ nav {
 .txt__re-2 {
     font-style: normal;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 .line-2 {
     padding-bottom: 32px;
+}
+
+#table  {
+    width: 100%;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "colum__1 colum__2" "line__re line__re";
+    list-style: none;
+}
+
+#colum__1 {
+    grid-area: colum__1;
+    padding-right: 32px;
+}
+
+#colum__2 {
+    grid-area: colum__2;
+}
+
+#line__re {
+    grid-area: line__re;
 }
 
 
