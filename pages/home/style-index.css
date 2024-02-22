@@ -274,13 +274,15 @@ nav {
 
 #grad {
     position: absolute;
-    width: 1440px;
+    width: 100vw;
     height: 712px;
-    background: linear-gradient(90deg, rgba(24, 24, 28, 0.90) 26.7%, rgba(24, 24, 28, 0.00) 70.03%);
+    transition: all 1ms;
+    background: linear-gradient(90deg, rgba(24, 24, 28, 0.90) 40%, rgba(24, 24, 28, 0.00) 60%);
 }
 
 #video__cta {
     position: absolute;
+    width: 100vw;
     height: 712px;
     overflow: hidden;
     top: 0;
@@ -301,7 +303,7 @@ nav {
 
 @media only screen and (max-width: 768px) {
     #video__cta {
-        left: -500px;
+        width: 100vw;
         position: absolute;
         height: 688px;
         overflow: hidden;
@@ -310,11 +312,10 @@ nav {
     }
 
     #grad {
-        left: 200px;
+        background: linear-gradient(90deg, rgba(24, 24, 28, 0.70) 50%, rgba(24, 24, 28, 0.00) 100%);
     }
-    
+
     #video {
-        object-fit: fill;
         width: auto;
         height: 688px;
     }
