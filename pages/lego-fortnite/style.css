@@ -151,6 +151,7 @@ span {
     height: 300px;
     border-radius: 5px;
     border: 2px solid gray;
+    transition: border-color 1.3s ease;
 }
 
 .details {
@@ -161,6 +162,16 @@ span {
 
 iframe {
     border: 2px solid gray;
+    transition: border-color 1.3s ease;
+}
+
+iframe:hover {
+    border-color: #db006e;
+}
+
+
+.item img:hover {
+    border-color: #db006e;
 }
 
 /* galeria */
