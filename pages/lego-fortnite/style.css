@@ -1,16 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+    font-size: 62.5%;
 }
 body{
     background-color: hsl(72deg 11.63% 8.43%);
+    font-size: 1.6rem;
 }
 header{
     background-color: black;
     display: flex;
 }
 #global-header{
-    height: 70px;
+    height: 5rem;
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -20,23 +28,26 @@ header{
     padding-inline-end: 4rem;
 }
 .logo{
-    margin-left: 25px;
-    margin-top: 5px;
-    width: 100px;
-    height: 30px;
+    margin-left: 2.5rem;
+    margin-top: .5rem;
+    width: 10rem;
+    height: 3rem;
 }
+
 #global-link {
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
     font-size: 110%;
 }
+
 #global-lista{
     list-style: none;
     align-items: center;
     display: flex;
     gap: 5rem;
 }
+
 .link{
     text-decoration: none;
     color: aliceblue;
@@ -52,23 +63,13 @@ header{
     height: 600px;
     position: absolute;
 }
-#galeria{
-    display: inline-flex;
-    gap: 2.5rem;
-    justify-content: center;
-    align-items: center;
-}
+
 iframe {
     width: 375px;
     height: 300px;
     border-radius: 0.5rem;
 }
-.imagem-galeria{
-    width: 375px;
-    height: 300px;
-    display: inline-block;
-    border-radius: 0.5rem;
-}
+
 #jogo{
     width: 100%;
     display: inline-grid;
@@ -87,11 +88,6 @@ iframe {
     overflow: hidden;
 }
 
-#nome-modo{
-    color: aliceblue;
-    font-size: 375%;
-    font-family: fantasy;
-}
 #descrição{
     height: 130px;
     margin-top: 500px;
@@ -103,24 +99,19 @@ iframe {
 }
 #container-descrição{
     background-color: black;
-    height: 130px;
+    height: 100px;
     display: grid;
     align-items: center;
-    padding-inline-start: 25px;
+    padding: 10px;
     border-radius: 0.5rem;
+    text-align: center;
 }
 .texto{
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     color: aliceblue;
     font-family: "Inter", sans-serif;
-}
-
-a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
 }
 
 #footer{
@@ -128,9 +119,81 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    font-size: small;
 }
 #classificação{
     width: 215px;
     height: 120px;
+}
+
+span {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* galeria */
+
+.principal h1 {
+    font-size: 2.4rem;
+    padding-top: 1.6rem;    
+}
+
+.gallery {
+    margin-top: 3.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.details {
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+}
+
+iframe {
+    border: 2px solid gray;
+}
+
+/* galeria */
+
+.modos-de-jogo {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 30px;
+    color: rgb(134, 162, 187);
+}
+
+.game-modes {
+    margin-top: 3.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.shortcut img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+#modo-jogo a {
+    align-items: center;
+    color: aliceblue;
+}
+
+#modo-jogo img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    box-shadow: 0 0 10px rgba(243, 241, 241, 0.5);
 }
