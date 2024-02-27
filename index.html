@@ -3,53 +3,70 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <link rel="icon" href="/assets/favicon/fortnite_icon.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/pages/home/style-index.css" />
   </head>
   <body>
     <header>
       <nav>
         <div id="bloco__nav">
-          <div id="item__logo">
-            <a href="#"><img src="/assets/fortnite-logo.svg" alt="Logo do Fornite"/></a>
+          <div id="logo__menu">
+            <a id="btn__menu" href="#"><img id="btn__humb" src="/assets/icons-nav/icon-menu.svg" alt=""></a>
+            <a id="logo__cont" href="#"><img id="item__logo" src="/assets/fortnite-logo.svg" alt="Logo do Fornite"/></a>
           </div>
           <div id="menu">
-            <ul id="lista">
-              <li class="item__menu"><a class="menu__txt" href="#">Início</a></li>
-              <li class="item__menu"><a class="menu__txt" href="#">Modos de jogo</a></li>
-              <li class="item__menu"><a class="menu__txt" href="#">Requisitos do sistema</a></li>
+            <ul class="nav nav-pills mb-3 zero__mg" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#video__cta" role="tab" aria-controls="video__cta" aria-selected="true">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#modos" role="tab" aria-controls="modos" aria-selected="false">Modos de jogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#requisitos" role="tab" aria-controls="requisitos" aria-selected="false">Requisitos do sistema</a>
+              </li>
             </ul>
+            <!-- <ul id="lista">
+              <li class="item__menu"><a class="menu__txt zero__mg" href="#video__cta">Início</a></li>
+              <li class="item__menu"><a class="menu__txt zero__mg" href="#modos">Modos de jogo</a></li>
+              <li class="item__menu"><a class="menu__txt zero__mg" href="#requisitos">Requisitos do sistema</a></li>
+            </ul> -->
           </div>
         </div>
-        <div id="item__btn">
-          <a class="btn__txt" href="#">Baixar</a>
+        <div id="btn__nav">
+          <div id="item__btn">
+            <a class="btn__txt zero__mg" href="#">Baixar</a>
+          </div>
+          <div>
+            
+          </div>
         </div>
       </nav>
     </header>
-    <div id="video__cta">
+    <div id="video__cta" role="tabpanel" aria-labelledby="video__cta">
       <div id="grad"></div>
       <video id="video" src="/assets/Fortnite-Trailer-Corte-1.mp4" autoplay muted loop></video>
     </div>
-    <div id="conteudo">
+    <div id="conteudo" class="tab-content" id="pills-tabContent">
       <main>
         <div id="cta">
-          <h1 class="tlt__cta">
+          <h1 class="tlt__cta zero__mg">
             Baixe Fortnite e mergulhe no universo de ação épica.
           </h1>
           <div id="btn__cta">
-            <a id="btn__cta-txt" href="#">Baixe agora!</a>
+            <a class="zero__mg" id="btn__cta-txt" href="#">Baixe agora!</a>
           </div>
         </div>
         <section class="cont__desc">
           <div>
-            <h2 class="tlt__h2">Descrição</h2>
-            <p id="txt__desc">
+            <h2 class="tlt__h2 zero__mg">Descrição</h2>
+            <p class="zero__mg" id="txt__desc">
               Crie, jogue e batalhe com amigos gratuitamente no Fortnite. Seja a
               última pessoa de pé no Battle Royale e na Construção Zero,
               experimente shows e eventos ao vivo, ou descubra mais de um milhão
@@ -61,111 +78,111 @@
           </div>
         </section>
       </main>
-
-      <div id="modos">
-        <h2 class="tlt__h2">Modos de jogo</h2>
+      <div id="space__1"></div>
+      <div id="modos" role="tabpanel" aria-labelledby="modos">
+        <h2 class="tlt__h2 zero__mg">Modos de jogo</h2>
         <div id="bocos">
           <ul id="modos__list">
             <li class="modos__cards">
-              <div id="card__br-zb">
+              <div class="cards__cont" id="card__br-zb">
                 <a id="link__br-zb" href="#">
-                  <h3 class="tlt__h3">Battle Royale e Zero Build</h3>
+                  <h3 class="tlt__h3 zero__mg">Battle Royale e Zero Build</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
-              <div id="card__ff">
-                <a id="link__ff" href="#">
-                  <h3 class="tlt__h3">Fortnite Festival</h3>
+              <div class="cards__cont" id="card__ff">
+                <a id="link__ff" href="/pages/battle-royale/battle-royale.html">
+                  <h3 class="tlt__h3 zero__mg">Fortnite Festival</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
-              <div id="card__lf">
+              <div class="cards__cont" id="card__lf">
                 <a id="link__lf" href="/pages/lego-fortnite/rodrigo.html">
-                  <h3 class="tlt__h3">Lego Fortnite</h3>
+                  <h3 class="tlt__h3 zero__mg">Lego Fortnite</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
-              <div id="card__rr">
+              <div class="cards__cont" id="card__rr">
                 <a id="link__rr" href="/pages/rocket-racing/rocket-racing.html">
-                  <h3 class="tlt__h3">Rocket Racing</h3>
+                  <h3 class="tlt__h3 zero__mg">Rocket Racing</h3>
                 </a>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div id="requisitos">
-        <h2 class="tlt__h2">Requisitos de sistema</h2>
-        <table id="table">
-          <tr class="line">
-            <th class="tlt__re-tbl">Mínimo</th>
-            <th class="tlt__re-tbl">Recomendado</th>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1">Sistema operacional</td>
-            <td class="txt__re-tbl-1">Sistema operacional</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2">Windows 10 de 64 bits</td>
-            <td class="txt__re-tbl-2">Windows 10 de 64 bits</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1">Processador</td>
-            <td class="txt__re-tbl-1">Processador</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2">Core i3-3225 3.3 GHz</td>
-            <td class="txt__re-tbl-2">Core i5-7300U 3.5 GHz</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1">Memória</td>
-            <td class="txt__re-tbl-1">Memória</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2">8 GB de RAM</td>
-            <td class="txt__re-tbl-2">8 GB de RAM</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1"></td>
-            <td class="txt__re-tbl-1">GPU</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2"></td>
-            <td class="txt__re-tbl-2">
-              Nvidia GTX 960, AMD R9 280 ou GPU DX11 equivalente
-            </td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1"></td>
-            <td class="txt__re-tbl-1">VRAM</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2"></td>
-            <td class="txt__re-tbl-2">2 GB de VRAM</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-1"></td>
-            <td class="txt__re-tbl-1">Adicional</td>
-          </tr>
-          <tr class="line">
-            <td class="txt__re-tbl-2"></td>
-            <td class="txt__re-tbl-2">SSD NVMe</td>
-          </tr>
-        </table>
-        <div class="line-2">
-          <span class="txt__re-1">Contas para login obrigatórias</span>
-          <span class="txt__re-2">Epic Games</span>
-        </div>
-        <div class="line-3">
-          <span class="txt__re-1">Idiomas suportados</span>
-          <span class="txt__re-2"
-            >Inglês, Francês, Alemão, Italiano, Japonês, Coreano, Polonês,
-            Português (Brasil), Russo, Espanhol (América Latina, Espanha), Turco
-            e Árabe</span>
-        </div>
+      <div id="requisitos" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <h2 class="tlt__h2 zero__mg">Requisitos de sistema</h2>
+        <div id="table">
+          <div id="colum__1">
+              <ul id="re__list">
+                  <li class="line">
+                      <h3 class="tlt__re-tbl zero__mg">Mínimo</h3>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Sistema operacional</div>
+                      <div class="txt__re-tbl-2">Windows 10 de 64 bits</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Processador</div>
+                      <div class="txt__re-tbl-2">Core i3-3225 3.3 GHz</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Memória</div>
+                      <div class="txt__re-tbl-2">8 GB de RAM</div>
+                  </li>
+              </ul>
+          </div>
+          
+          <div id="colum__2">
+              <ul id="re__list">
+                  <li class="line">
+                      <h3 class="tlt__re-tbl zero__mg">Recomendado</h3>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Sistema operacional</div>
+                      <div class="txt__re-tbl-2">Windows 10 de 64 bits</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Processador</div>
+                      <div class="txt__re-tbl-2">Core i5-7300U 3.5 GHz</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Memória</div>
+                      <div class="txt__re-tbl-2">8 GB de RAM</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">GPU</div>
+                      <div class="txt__re-tbl-2">Nvidia GTX 960, AMD R9 280 ou GPU DX11 equivalente</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">VRAM</div>
+                      <div class="txt__re-tbl-2">2 GB de VRAM</div>
+                  </li>
+                  <li class="line">
+                      <div class="txt__re-tbl-1">Adicional</div>
+                      <div class="txt__re-tbl-2">SSD NVMe</div>
+                  </li>
+              </ul>
+          </div>
+          
+          <div id="line__re">
+              <div class="line-2">
+                  <span class="txt__re-1">Contas para login obrigatórias</span>
+                  <span class="txt__re-2">Epic Games</span>
+                </div>
+                <div class="line-3">
+                  <span class="txt__re-1">Idiomas suportados</span>
+                  <span class="txt__re-2"
+                    >Inglês, Francês, Alemão, Italiano, Japonês, Coreano, Polonês,
+                    Português (Brasil), Russo, Espanhol (América Latina, Espanha), Turco
+                    e Árabe</span>
+                </div>
+          </div>
+      </div>
       </div>
     </div>
 
@@ -186,7 +203,7 @@
           </li>
         </ul>
         <div id="txt__bot">
-          <p class="txt__re1">
+          <p class="txt__re1 zero__mg">
             © 2024, Epic Games, Inc. Epic, Epic Games, o logotipo da Epic Games,
             Fortnite, o logotipo do Fortnite, Unreal, Unreal Engine 4 e UE4 são
             marcas comerciais ou registradas da Epic Games, Inc. nos Estados
@@ -195,13 +212,13 @@
         </div>
         <div id="line__bot"></div>
         <div>
-          <ul class="social__media">
+          <ul class="social__media ">
             <li>
               <a href="https://github.com/Fastdeath/projeto-final-grupo-2" target="_blank"><img src="/assets/icons-social-media/github.svg" alt=""
               /></a>
             </li>
             <li>
-              <p class="txt__dft">
+              <p class="txt__dft zero__mg">
                 Case de estudo, desenvolvido para o curso HTML e CSS
                 (Coderhouse).
               </p>

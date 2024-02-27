@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.83334mm"
+   height="105.83334mm"
+   viewBox="0 0 105.83334 105.83334"
+   version="1.1"
+   id="svg45"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="Fortnite_Chapter_3_Season_3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.61355005"
+     inkscape:cx="66.009285"
+     inkscape:cy="195.58307"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg45" />
+  <defs
+     id="defs42">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3953">
+      <stop
+         style="stop-color:#373737;stop-opacity:1;"
+         offset="0"
+         id="stop3949" />
+      <stop
+         style="stop-color:black;stop-opacity:1"
+         offset="1"
+         id="stop3951" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3953"
+       id="linearGradient3955"
+       x1="37.527046"
+       y1="15.84885"
+       x2="37.527046"
+       y2="87.971634"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="g4154"
+     style="stroke:none">
+    <rect
+       style="fill:#f7df3d;fill-opacity:1;stroke:none;stroke-width:0.865;stroke-linejoin:round;paint-order:stroke fill markers"
+       id="rect3411-7"
+       width="105.83334"
+       height="105.83334"
+       x="0"
+       y="0" />
+    <path
+       id="_x31_"
+       d="m 53.895645,36.017202 0.0772,-3.919116 c 2.29595,-0.0503 11.17249,-0.0978 12.03626,-0.02278 0,0 1.36655,-14.921953 1.44042,-16.075827 -4.54266,0.125336 -8.61622,-0.02529 -12.24557,0.02501 -3.62909,0.07503 -6.76475,-0.175639 -9.43076,-0.175639 -3.08643,0.07531 -5.82685,0.07531 -8.24615,0 0.17259,9.331592 0.32084,18.41195 0.41931,26.188371 0.099,7.775857 0.17287,14.473438 0.22237,20.14304 0.0498,6.571682 0.099,27.542355 0.099,27.542355 l 16.31913,-3.48635 c -0.12363,-3.4369 -0.19748,-12.968873 -0.22236,-16.054205 -0.0246,-3.085333 -0.0743,-7.876463 -0.14826,-10.636092 2.12336,-0.0503 3.18488,-0.100037 4.6909,-0.100037 0,0 4.33987,-0.170294 5.12979,-0.09527 -0.0739,-2.332757 0.26436,-15.320578 0.26436,-15.320578 -3.50573,0.125055 -4.33239,0.0392 -6.40595,0.0392 h -3.95048 c -0.0493,-2.031783 -0.0738,-2.408351 -0.0493,-4.013826 v -4.038275 z"
+       style="fill:url(#linearGradient3955);fill-opacity:1;stroke:none;stroke-width:0.278797" />
+  </g>
+</svg>
