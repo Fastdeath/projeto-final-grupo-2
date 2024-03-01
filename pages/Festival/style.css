@@ -17,7 +17,6 @@ header{
 
 nav {
     display: flex;
-    padding-left: 40px;
     background-color: black;
     align-items: center;
 }
@@ -36,26 +35,27 @@ nav {
 }
 
 .link{
-    text-decoration: none !important;
-    color: aliceblue;
-    display: inline;
-    padding-right: 20px;
-    transition: 0.3s;
+    border-radius: 8px;
+    margin-right: 8px;
+    padding: 6px 16px;
+    transition: 0.5s;
     align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none !important;
 }
 
 
 
 .logo_menu {
-    margin-right: 64px;
+
 }
 
 #lista{
     list-style: none;
     align-items: center;
     display: flex;
-    gap: 2rem;
-    padding-right: 80px;
+    padding-right: 728px;
     margin: 0px;
 }
 
@@ -67,6 +67,12 @@ nav {
 
 }
 
+.btn {
+    height: 36px;
+    padding: 8px 16px;
+
+}
+
 
 #item__btn {
     border-radius: 8px;
@@ -75,7 +81,7 @@ nav {
     color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     border: none;
     transition: 0.3s;
     outline: 1px solid #CDCDCD;
@@ -100,11 +106,42 @@ nav {
     text-decoration: none;
 }
 
-.botao-jogar{
-    height: 40px;
+.txt_h1 {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    transition: all 1s;
+}
+
+#btn_jogue_agora {
+    border-radius: 8px;
+    background-color: rgba(247, 255, 25, 1);
+    display: inline-flex;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s;
+    outline: 1px solid rgba(247, 255, 25, 1);
+    outline-offset: -1px;
     
 }
 
+#btn_jogue_agora:hover {
+    border-radius: 8px;
+    background-color: rgb(217, 223, 53);
+    outline: 4px solid white;
+    outline-offset: -4px;
+}
+
+#btn_txt {
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+
+}
 /* MAIN */
 
 .imagem-topo{
