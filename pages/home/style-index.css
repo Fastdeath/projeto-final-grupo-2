@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* box-sizing: border-box; */
     scroll-behavior: smooth;
 }
 
@@ -14,22 +13,16 @@
     --button-color-hover: rgb(217, 223, 53);
     --secund-button-color: rgba(64, 64, 68, 1);
     --color-medium-70: rgba(255, 255, 255, 0.70);
-    
 }
 
 body {
     background-color: var(--bg-color);
     overflow-x: hidden;
-
 }
 
 body * {
     font-family: "Inter", sans-serif;
     color: var( --text-color);
-}
-
-.zero__mg{
-    margin: 0px ;
 }
 
 header {
@@ -38,7 +31,7 @@ header {
     top: 0;
     width: 100%;
     position: fixed;
-    z-index:1;
+    z-index:2;
 }
 
 /* navbar */
@@ -93,9 +86,10 @@ nav {
     transition: all 1s;
 }
 
-#btn__menu {
+.btn__menu {
     display: none;
     transition: all 1s;
+    border: none;
 }
 
 #btn__humb {
@@ -104,13 +98,14 @@ nav {
     transition: all 1s;
 }
 
+
 @media only screen and (max-width: 940px) {
     #item__logo {
         margin-left: 8px;
         height: 26px;
     }
 
-    #btn__menu {
+    .btn__menu {
         height: 36px;
         width: 36px;
         margin-right: 8px;
@@ -128,7 +123,7 @@ nav {
         width: 24px;
     }
 
-    #btn__menu:active {
+    .btn__menu:active {
         height: 36px;
         width: 36px;
         margin-right: 8px;
@@ -138,70 +133,14 @@ nav {
         background-color: var(--secund-button-color);
         justify-content: center;
     }
+
 }
+
+
 
 /* navbar-menu */
 
-.mb-3 {
-    margin: 0px !important;
-}
-
-.nav-item {
-    display: inline;
-    align-items: center;
-}
-
-.nav-link {
-    border-radius: 8px;
-    margin-right: 8px;
-    padding: 6px 16px;
-    transition: 0.5s;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text-color);
-    text-decoration: none !important;
-}
-
-.nav-link:hover {
-    border-radius: 8px;
-    margin-right: 8px;
-    padding: 6px 16px;
-    border-radius: 8px;
-    align-items: center;
-    color: var(--text-color);
-    background-color: var(--secund-button-color);
-}
-
-.nav-pills .nav-link.active {
-    border-radius: 8px;
-    margin-right: 8px;
-    padding: 6px 16px;
-    border-radius: 8px;
-    align-items: center;
-    color: var(--text-color);
-    background-color: var(--secund-button-color);
-}
-
-
-@media only screen and (max-width: 940px) {
-    .nav-item {
-        display: none;
-    }
-    
-    .nav-link {
-        display: none;
-    }
-    
-    .nav-link:hover {
-        display: none;
-    }
-    
-    .nav-pills .nav-link.active {
-        display: none;
-    }
-}
-
-/* .item__menu {
+.item__menu {
     display: inline;
 }
 
@@ -236,7 +175,7 @@ nav {
         display: none;
     }
     
-} */
+}
 
 /* navbar-btn */
 
@@ -270,6 +209,62 @@ nav {
     text-decoration: none;
 }
 
+/* menu__mb */
+
+#menu__mb {
+    display: none;
+}
+
+@media only screen and (max-width: 940px) {
+    #menu__mb {
+        display: block;
+        height: 336px;
+        width: 100vw;
+        position: fixed;
+        background-color: var(--container-color);
+        z-index:1;
+        border-radius: 8px;
+    }
+    
+    #lista__mb {
+        display: flex;
+        flex-direction: column;
+        margin: 116px 16px 0px 16px;
+    }
+    
+    .item__menu__mb {
+        display: flex;
+        margin-bottom: 16px;
+        align-self: center;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .menu__txt__mb {
+        width: 100%;
+        padding: 14px 0px 14px 0px;
+        text-align: center;
+        border-radius: 8px;
+        transition: 0.5s;
+        text-decoration: none;
+        color: var(--text-color);
+        outline: 4px solid var(--bg-color);
+        outline-offset: -4px;
+    }
+    
+    .menu__txt__mb:active {
+        color: var(--text-color);
+        background-color: var(--secund-button-color);
+    }
+    
+    #bg__mb {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+}
+
 /* video */
 
 #grad {
@@ -277,10 +272,11 @@ nav {
     width: 100vw;
     height: 712px;
     transition: all 1ms;
-    background: linear-gradient(90deg, rgba(24, 24, 28, 0.90) 40%, rgba(24, 24, 28, 0.00) 60%);
+    background: linear-gradient(90deg, rgba(24, 24, 28, 0.90) 20%, rgba(24, 24, 28, 0.00) 80%);
 }
 
 #video__cta {
+    z-index:0;
     position: absolute;
     width: 100vw;
     height: 712px;
@@ -412,6 +408,13 @@ nav {
     background: var(--container-color);
 }
 
+@media only screen and (max-width: 768px) {
+    .cont__desc {
+        margin-top: 122px;
+        padding: 16px;
+    }
+}
+
 .tlt__h2 {
     font-size: 24px;
     font-style: normal;
@@ -429,7 +432,6 @@ nav {
 /* modos */
 
 #modos {
-    
     margin-top: 64px;
 }
 
@@ -437,7 +439,7 @@ nav {
 #modos__list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #link__br-zb,
@@ -458,19 +460,19 @@ nav {
 
 
 #card__br-zb {
-    background-image: url(/assets/thumbnail-battle-royale-zero.png);
+    background-image: url(../../assets/thumbnail-battle-royale-zero.png);
 }
 
 #card__ff {
-    background-image: url(/assets/thumbnail-fortnite-festival.png);
+    background-image: url(../../assets/thumbnail-fortnite-festival.png);
 }
 
 #card__lf {
-    background-image: url(/assets/thumbnail-lego-fortnite.png); 
+    background-image: url(../../assets/thumbnail-lego-fortnite.png); 
 }
 
 #card__rr {
-    background-image: url(/assets/thumbnail-rocket-racing.png);
+    background-image: url(../../assets/thumbnail-rocket-racing.png);
 }
 
 .cards__cont {
@@ -491,6 +493,15 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+    #modos__list {
+        height: 208px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
     .cards__cont {
         background-size: 240px 208px;
         width: 240px;
@@ -526,6 +537,13 @@ nav {
     padding: 32px;
     border-radius: 8px;
     background: var(--container-color);
+}
+
+@media only screen and (max-width: 768px) {
+    #requisitos {
+        padding: 16px;
+    }
+    
 }
 
 #re__list {
@@ -593,7 +611,6 @@ nav {
     }
 }
 
-
 #colum__1 {
     grid-area: colum__1;
     padding-right: 32px;
@@ -606,7 +623,6 @@ nav {
 #line__re {
     grid-area: line__re;
 }
-
 
 /* footer */
 

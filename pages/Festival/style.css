@@ -21,12 +21,23 @@ nav {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    #menu-fortnite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 0;
+        justify-content: space-between;
+    }
+
+}
 /* HEADER */
 
-#menu-fotnite{
+#menu-fortnite{
     width: 100%;
     justify-content: center;
     display: flex;
+    padding-right: 120px;
 }
 
 #links {
@@ -181,81 +192,109 @@ nav {
     display: inline-flex;
 }
 
-.principal{
-    margin-top: 120px;
+.inf-descricao{
+    margin-top: 60px;
     padding: 30px;
     gap: 10px;
     background-color: black;
-    align-items: center;
     border-radius: 8px;
-    width: 85%;
-    margin-left: 40px;
-    height: 200px;
-    
+    width: 70%;
+    margin-left: 80px;
+    height: 100px;
+}
+
+.visualizacao {
+    margin-top: 60px;
+    padding: 30px;
+    gap: 10px;
+    background-color: black;
+    border-radius: 8px;
+    width: 5%;
+    margin-left: 20px;
+    height: 100px;
 }
 
 
 /* TEXTOS */
 
 .texto_h2{
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     padding-bottom: 16px;
 }
 
 .texto_h3{
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 200;
     padding-bottom: 16px;
 }
 
 .texto_p {
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
+}
+
+.texto_festival {
+    display: flex;
+    padding-bottom: 40px;
+    width: 511px;
+    text-align: center;
+    font-size: 46px;
 }
 
 
 /* GALERIA */
 
-#conteudo_galeria {
-    padding-left: 40px;
+.conteudo_galeria {
+    padding-left: 80px;
+}
+
+.modos_site {
+    padding-left: 80px;
+    padding-top: 50px;
 }
 
 #galeria{
     display: inline-flex;
-    padding-left: 40px;
+    padding-left: 80px;
     gap: 20px;
     
 }
 
 .video{
-    width: 250px;
-    height: 220px;
+    width: 300px;
+    height: 280px;
     border-radius: 8px;
 }
 
 .imagem-galeria{
-    width: 250px;
-    height: 220px;
+    width: 300px;
+    height: 280px;
     border-radius: 8px;
 }
+
 
 /* FOOTER */
 
 #fim_conteudo{
     display: inline-flex;
     align-items: center;
-    gap: 1rem;
     background-color: black;
-    padding: 50px;
+    padding: 30px;
     
+}
+
+.finalizacao {
+    padding: 60px;
 }
 
 .indicacao {
     align-items: end;
+    align-content: center;
+    height: 100px;
 }
 
 
