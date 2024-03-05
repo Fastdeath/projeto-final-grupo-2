@@ -9,16 +9,19 @@
 .root {
     font-size: 62.5%;
 }
+
 body{
     background-color: hsl(72deg 11.63% 8.43%);
     font-size: 1.6rem;
 }
+
 header{
     background-color: black;
     display: flex;
 }
+
 #global-header{
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -26,12 +29,14 @@ header{
     position: relative;
     padding-inline-start: 5rem;
     padding-inline-end: 4rem;
+    font-size: 1.0rem;
 }
+
 .logo{
     margin-left: 2.5rem;
     margin-top: .5rem;
-    width: 10rem;
-    height: 3rem;
+    width: 66%;
+    height: 1.9rem;
 }
 
 #global-link {
@@ -131,6 +136,12 @@ span {
     font-weight: bold;
 }
 
+#nome-modo {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
 /* galeria */
 
 .principal h1 {
@@ -166,27 +177,27 @@ iframe {
 }
 
 iframe:hover {
-    border-color: #db006e;
+    border-color: #00db1d;
 }
 
 
 .item img:hover {
-    border-color: #db006e;
+    border-color: #00db1d;
 }
 
 /* galeria */
 
 .modos-de-jogo {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
     padding: 0 30px;
-    color: rgb(134, 162, 187);
+    color: rgb(245, 245, 245);
+    text-decoration: underline;
 }
 
 .game-modes {
     margin-top: 3.2rem;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
@@ -195,12 +206,17 @@ iframe:hover {
 .shortcut img {
     width: 100%;
     border-radius: 5px;
-    border: 2px solid gray;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+figcaption {
+    text-align: center;
 }
 
 #modo-jogo a {
     align-items: center;
-    color: aliceblue;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
 }
 
 #modo-jogo img:hover {
