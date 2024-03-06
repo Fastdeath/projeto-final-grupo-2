@@ -612,23 +612,25 @@ nav {
 @media only screen and (max-width: 768px) {
     #table  {
         gap: 32px;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50%;
         grid-template-rows: auto auto;
-        grid-template-areas: "colum__1" "colum__2" "line__re";
+        grid-template-areas: "colum__1 colum__1" "colum__2 colum__2" "line__re line__re";
     }
 }
 
 #colum__1 {
     grid-area: colum__1;
-    padding-right: 32px;
+
 }
 
 #colum__2 {
     grid-area: colum__2;
+
 }
 
 #line__re {
     grid-area: line__re;
+
 }
 
 /* footer */
