@@ -21,9 +21,19 @@ nav {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    #menu-fortnite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 0;
+        justify-content: space-between;
+    }
+
+}
 /* HEADER */
 
-#menu-fotnite{
+#menu-fortnite{
     width: 100%;
     justify-content: center;
     display: flex;
@@ -183,7 +193,7 @@ nav {
 }
 
 .inf-descricao{
-    margin-top: 120px;
+    margin-top: 60px;
     padding: 30px;
     gap: 10px;
     background-color: black;
@@ -194,7 +204,7 @@ nav {
 }
 
 .visualizacao {
-    margin-top: 120px;
+    margin-top: 60px;
     padding: 30px;
     gap: 10px;
     background-color: black;
@@ -227,6 +237,14 @@ nav {
     font-weight: 400;
 }
 
+.texto_festival {
+    display: flex;
+    padding-bottom: 40px;
+    width: 511px;
+    text-align: center;
+    font-size: 46px;
+}
+
 
 /* GALERIA */
 
@@ -247,14 +265,14 @@ nav {
 }
 
 .video{
-    width: 250px;
-    height: 220px;
+    width: 300px;
+    height: 280px;
     border-radius: 8px;
 }
 
 .imagem-galeria{
-    width: 250px;
-    height: 220px;
+    width: 300px;
+    height: 280px;
     border-radius: 8px;
 }
 
@@ -267,6 +285,10 @@ nav {
     background-color: black;
     padding: 30px;
     
+}
+
+.finalizacao {
+    padding: 60px;
 }
 
 .indicacao {
