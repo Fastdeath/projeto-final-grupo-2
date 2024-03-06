@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(72deg 11.63% 8.43%) !important;
+    font-family: "inter" , sans-serif;
+    color: white;
+    font-size: small;
+}
+
+header{
+    background-color: black; 
+    display: flex;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu-fortnite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 0;
+        justify-content: space-between;
+    }
+
+}
+/* HEADER */
+
+#menu-fortnite{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-right: 120px;
+}
+
+#links {
+    display: inline-flex;
+    padding: 8px 8px;
+}
+
+.link{
+    border-radius: 8px;
+    margin-right: 8px;
+    padding: 6px 16px;
+    transition: 0.5s;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none !important;
+}
+
+
+
+.logo_menu {
+
+}
+
+#lista{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding-right: 728px;
+    margin: 0px;
+}
+
+.link:hover {
+    border-radius: 8px;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(64, 64, 68, 1);
+
+}
+
+.btn {
+    height: 36px;
+    padding: 8px 16px;
+
+}
+
+
+#item__btn {
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+    outline: 1px solid #CDCDCD;
+    outline-offset: -1px;
+    text-decoration: none;
+
+}
+
+#item__btn:hover {
+    border-radius: 8px;
+    background-color: white;
+    outline: 4px solid #CDCDCD;
+    outline-offset: -4px;
+}
+
+.btn__txt {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.txt_h1 {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    transition: all 1s;
+}
+
+#btn_jogue_agora {
+    border-radius: 8px;
+    background-color: rgba(247, 255, 25, 1);
+    display: inline-flex;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s;
+    outline: 1px solid rgba(247, 255, 25, 1);
+    outline-offset: -1px;
+    
+}
+
+#btn_jogue_agora:hover {
+    border-radius: 8px;
+    background-color: rgb(217, 223, 53);
+    outline: 4px solid white;
+    outline-offset: -4px;
+}
+
+#btn_txt {
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+/* MAIN */
+
+.imagem-topo{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+
+#banner{
+    position: relative;
+    width: 100%;
+    height: 728px;
+    overflow: hidden;
+}
+
+#jogo{
+    width: 100%;
+    display: inline-grid;
+    padding-inline-start: 7rem;
+    padding-inline-end: 7rem;
+    justify-items: center;
+    justify-content: start;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 27px;
+}
+
+#nome-modo{
+    color: aliceblue;
+    font-size: 375%;
+    font-family: fantasy;
+}
+
+#descricao{
+    position: relative;
+    display: inline-flex;
+}
+
+.inf-descricao{
+    margin-top: 60px;
+    padding: 30px;
+    gap: 10px;
+    background-color: black;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: 80px;
+    height: 100px;
+}
+
+.visualizacao {
+    margin-top: 60px;
+    padding: 30px;
+    gap: 10px;
+    background-color: black;
+    border-radius: 8px;
+    width: 5%;
+    margin-left: 20px;
+    height: 100px;
+}
+
+
+/* TEXTOS */
+
+.texto_h2{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.texto_h3{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    padding-bottom: 16px;
+}
+
+.texto_p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.texto_festival {
+    display: flex;
+    padding-bottom: 40px;
+    width: 511px;
+    text-align: center;
+    font-size: 46px;
+}
+
+
+/* GALERIA */
+
+.conteudo_galeria {
+    padding-left: 80px;
+}
+
+.modos_site {
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+#galeria{
+    display: inline-flex;
+    padding-left: 80px;
+    gap: 20px;
+    
+}
+
+.video{
+    width: 300px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+.imagem-galeria{
+    width: 300px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+
+/* FOOTER */
+
+#fim_conteudo{
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    padding: 30px;
+    
+}
+
+.finalizacao {
+    padding: 60px;
+}
+
+.indicacao {
+    align-items: end;
+    align-content: center;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
