@@ -6,7 +6,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <meta name="keywords" content="Fornite, jogo multiplataforma, lego, fetsival, battle royale, zero build">
+    <meta name="description" content="Jogue Fortnite de graça! Vários modos disponiveis.">
+    <title>Fortnite - Jogue agora!</title>
     <link rel="icon" href="./assets/favicon/fortnite_icon.svg">
     <link rel="stylesheet" href="./pages/home/style-index.css" />
   </head>
@@ -15,7 +17,7 @@
       <nav>
         <div id="bloco__nav">
           <div id="logo__menu">
-            <button class="btn__menu act__sub" onclick="toggleMode()">
+            <button class="btn__menu act__sub" onclick="clickMenu()">
               <img id="btn__humb" src="./assets/icons-nav/icon-menu.svg" alt="">
             </button>
             <a id="logo__cont" href="#"><img id="item__logo" src="./assets/fortnite-logo.svg" alt="Logo do Fornite"/></a>
@@ -30,7 +32,7 @@
         </div>
         <div id="btn__nav">
           <div id="item__btn">
-            <a class="btn__txt" href="#">Baixar</a>
+            <a class="btn__txt" href="https://store.epicgames.com/pt-BR/p/fortnite">Baixar</a>
           </div>
         </div>
       </nav>
@@ -54,7 +56,7 @@
             Baixe Fortnite e mergulhe no universo de ação épica.
           </h1>
           <div id="btn__cta">
-            <a id="btn__cta-txt" href="#">Baixe agora!</a>
+            <a id="btn__cta-txt" href="https://store.epicgames.com/pt-BR/p/fortnite">Jogue agora!</a>
           </div>
         </div>
         <section class="cont__desc">
@@ -79,28 +81,28 @@
           <ul id="modos__list">
             <li class="modos__cards">
               <div class="cards__cont" id="card__br-zb">
-                <a id="link__br-zb" href="./pages/battle-royale/battle-royale.html">
+                <a id="link__br-zb" class="link__modos" href="./pages/battle-royale/battle-royale.html">
                   <h3 class="tlt__h3">Battle Royale e Zero Build</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
               <div class="cards__cont" id="card__ff">
-                <a id="link__ff" href="./pages/battle-royale/battle-royale.html">
+                <a id="link__ff" class="link__modos" href="./pages/Festival/festival.html">
                   <h3 class="tlt__h3">Fortnite Festival</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
               <div class="cards__cont" id="card__lf">
-                <a id="link__lf" href="./pages/lego-fortnite/rodrigo.html">
+                <a id="link__lf" class="link__modos" href="./pages/lego-fortnite/rodrigo.html">
                   <h3 class="tlt__h3">Lego Fortnite</h3>
                 </a>
               </div>
             </li>
             <li class="modos__cards">
               <div class="cards__cont" id="card__rr">
-                <a id="link__rr" href="./pages/rocket-racing/rocket-racing.html">
+                <a id="link__rr" class="link__modos" href="./pages/rocket-racing/rocket-racing.html">
                   <h3 class="tlt__h3">Rocket Racing</h3>
                 </a>
               </div>
@@ -170,10 +172,10 @@
                 </div>
                 <div class="line-3">
                   <span class="txt__re-1">Idiomas suportados</span>
-                  <span class="txt__re-2"
+                  <div class="txt__re-2"
                     >Inglês, Francês, Alemão, Italiano, Japonês, Coreano, Polonês,
                     Português (Brasil), Russo, Espanhol (América Latina, Espanha), Turco
-                    e Árabe</span>
+                    e Árabe</div>
                 </div>
           </div>
       </div>
@@ -184,15 +186,15 @@
       <div id="conteudo__bot">
         <ul class="social__media">
           <li class="icon__list">
-            <a href="#" target="_blank"><img src="./assets/icons-social-media/facebook.svg" alt=""
+            <a href="https://www.facebook.com/BrasilFN/?brand_redir=209696469107685" target="_blank"><img src="./assets/icons-social-media/facebook.svg" alt=""
             /></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="./assets/icons-social-media/instagram.svg" alt=""
+            <a href="https://www.instagram.com/fortnite/" target="_blank"><img src="./assets/icons-social-media/instagram.svg" alt=""
             /></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="./assets/icons-social-media/x.svg" alt=""
+            <a href="https://twitter.com/FortniteGame" target="_blank"><img src="./assets/icons-social-media/x.svg" alt=""
             /></a>
           </li>
         </ul>

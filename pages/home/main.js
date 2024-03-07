@@ -1,25 +1,9 @@
-function toggleMode() {
-    const body = document.body
-
-    const btn__menu = document.documentElement
-
-    body.classList.toggle("menu__mb")
+function clickMenu() {
+    if (menu__mb.style.display == 'block') {
+        menu__mb.style.display = 'none'
+        btn__humb.setAttribute("src", "./assets/icons-nav/icon-menu.svg")
+    } else {
+        menu__mb.style.display = 'block'
+        btn__humb.setAttribute("src", "./assets/icons-nav/icon-close.svg")
+    }
 }
-
-//   function toggleMode() {
-//     const html = document.documentElement
-//     html.classList.toggle("light")
-  
-//     // if (html.classList.contains("light")) {
-//     //   html.classList.remove("light")
-//     // } else {
-//     //   html.classList.add("light")
-//     // }
-  
-//     const img = document.querySelector("profile img")
-//     if (html.classList.contains("light")) {
-//       img.setAttribute("src", "/Assets/avatar-light.png")
-//     } else {
-//       img.setAttribute("src", "/Assets/avatar.png")
-//     }
-//   }
