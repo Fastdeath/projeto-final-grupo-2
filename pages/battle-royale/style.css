@@ -100,7 +100,7 @@ header{
     align-content: center;
     overflow: auto;
 }
-#contener-descrição{
+#container-descrição{
     background-color: black;
     height: 130px;
     display: grid;
@@ -121,4 +121,12 @@ header{
 #classificação{
     width: 215px;
     height: 120px;
+}
+
+#modos {
+    margin: 0px 104px 0px 104px;
+}
+
+#mod_text {
+    margin: 0px 0px 20px 0px;
 }
