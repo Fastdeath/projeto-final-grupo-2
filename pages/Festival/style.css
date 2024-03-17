@@ -21,16 +21,7 @@ nav {
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-    #menu-fortnite {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        right: 0;
-        justify-content: space-between;
-    }
 
-}
 /* HEADER */
 
 #menu-fortnite{
@@ -39,6 +30,7 @@ nav {
     display: flex;
     padding-right: 120px;
 }
+
 
 #links {
     display: inline-flex;
@@ -57,16 +49,11 @@ nav {
 }
 
 
-
-.logo_menu {
-
-}
-
 #lista{
     list-style: none;
     align-items: center;
     display: flex;
-    padding-right: 728px;
+    padding-right: 730px;
     margin: 0px;
 }
 
@@ -75,30 +62,21 @@ nav {
     align-items: center;
     padding: 8px 16px;
     background-color: rgba(64, 64, 68, 1);
-
 }
 
-.btn {
-    height: 36px;
-    padding: 8px 16px;
-
+#button {
+    display: flex;
 }
-
 
 #item__btn {
     border-radius: 8px;
-    display: flex;
     background-color: white;
     color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     border: none;
-    transition: 0.3s;
-    outline: 1px solid #CDCDCD;
-    outline-offset: -1px;
-    text-decoration: none;
-
+    padding: 8px 16px;
 }
 
 #item__btn:hover {
@@ -106,6 +84,7 @@ nav {
     background-color: white;
     outline: 4px solid #CDCDCD;
     outline-offset: -4px;
+
 }
 
 .btn__txt {
@@ -114,7 +93,6 @@ nav {
     font-style: normal;
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
-    text-decoration: none;
 }
 
 .txt_h1 {
@@ -298,8 +276,34 @@ nav {
 }
 
 
+@media only screen and (max-width: 768px) {
+    #menu-fortnite {
+        padding: 10px;
+    }
 
+    #lista {
+        padding-right: 0px;
+    }
 
+    #item_logo {
+        padding-left: 20px;
+    }
+
+    #button {
+        padding-left: 60px;
+    }
+
+    .inf-descricao{
+        margin-top: 60px;
+        height: 180px;
+        margin-left: 25px
+    }
+
+    .visualizacao{
+        margin-top: 60px;
+        height: 180px;
+    }
+}
 
 
 
