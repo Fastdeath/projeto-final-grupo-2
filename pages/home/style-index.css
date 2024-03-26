@@ -13,6 +13,7 @@
     --button-color: rgba(247, 255, 25, 1);
     --button-color-hover: rgb(217, 223, 53);
     --secund-button-color: rgba(64, 64, 68, 1);
+    --secund-button-color-2: rgba(64, 64, 68, 0.70);
     --color-medium-70: rgba(255, 255, 255, 0.70);
 }
 
@@ -278,8 +279,9 @@ nav {
     padding: 16px;
 }
 
-#btn_left {
-    background-color: var(--color-medium-70);
+#btn__left {
+    display: none;
+    background-color: var(--secund-button-color-2);
     position: absolute;
     top: 128px;
     left: -36px;
@@ -287,8 +289,8 @@ nav {
     border: none;
 }
 
-#btn_right {
-    background-color: var(--color-medium-70);
+#btn__right {
+    background-color: var(--secund-button-color-2);
     position: absolute;
     top: 128px;
     right: -36px;
@@ -302,6 +304,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    scroll-padding: -104px;
     scrollbar-color: var(--button-color);
 }
 
@@ -566,11 +569,11 @@ footer {
         font-weight: 700;
     }
 
-    #btn_left {
+    #btn__left {
         display: none;
     }
     
-    #btn_right {
+    #btn__right {
         display: none;
     }
     
@@ -714,11 +717,11 @@ footer {
 }
 
 @media only screen and (min-width: 1759px) {
-    #btn_left {
+    #btn__left {
         display: none;
     }
     
-    #btn_right {
+    #btn__right {
         display: none;
     }
 
