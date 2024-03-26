@@ -270,7 +270,7 @@ nav {
     position: relative;
 }
 
-.btn__st {
+.btn__link {
     display: flex;
     align-items: center;
 }
@@ -281,21 +281,33 @@ nav {
 
 #btn__left {
     display: none;
-    background-color: var(--secund-button-color-2);
     position: absolute;
-    top: 128px;
-    left: -36px;
-    border-radius: 90px;
-    border: none;
+    left: -28px;
 }
 
 #btn__right {
-    background-color: var(--secund-button-color-2);
     position: absolute;
-    top: 128px;
-    right: -36px;
+    right: -28px;
+}
+
+.btn__stl {
+    background-color: var(--secund-button-color-2);
+    top: 136px;
     border-radius: 90px;
     border: none;
+    transition: 0.3s;
+    outline: 0px solid var(--secund-button-color-2);
+    outline-offset: 0px;
+}
+
+.btn__stl:hover {
+    background-color: var(--secund-button-color);
+    outline: 4px solid var(--color-medium-70);
+    outline-offset: -4px;
+}
+
+.btn__stl:active {
+    background-color: var(--color-medium-70);
 }
 
 #modos__list {
@@ -304,8 +316,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    scroll-padding: -104px;
-    scrollbar-color: var(--button-color);
+ 
 }
 
 #modos__list::-webkit-scrollbar {
@@ -570,11 +581,11 @@ footer {
     }
 
     #btn__left {
-        display: none;
+        display: none !important;
     }
     
     #btn__right {
-        display: none;
+        display: none !important;
     }
     
     /* requesitos */
@@ -718,11 +729,11 @@ footer {
 
 @media only screen and (min-width: 1759px) {
     #btn__left {
-        display: none;
+        display: none !important;
     }
     
     #btn__right {
-        display: none;
+        display: none !important;
     }
 
 }
