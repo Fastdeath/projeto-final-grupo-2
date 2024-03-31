@@ -217,7 +217,6 @@ nav {
     transition: 0.3s;
     outline: 1px solid var(--button-color);
     outline-offset: -1px;
-    
 }
 
 #btn__cta:hover {
@@ -316,7 +315,6 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
- 
 }
 
 #modos__list::-webkit-scrollbar {
